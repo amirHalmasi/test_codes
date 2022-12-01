@@ -1,0 +1,124 @@
+<!--✅practice: find atribute of each tag that we talk about -->
+
+<!DOCTYPE html>
+<!-- browser from this tag know that we use html:5 -->
+<html lang="en">
+  <!--  this tag use to start building your project -->
+  <head>
+    <!-- this is header section -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>بوت کمپ برنامه نویسی</title>
+    <script>
+      function myFunction() {
+        alert("image is loaded");
+      }
+    </script>
+  </head>
+  <body bgcolor="gray" onresize="myFunction()">
+    <!-- this is body section -->
+
+    <h1>به بوت کمپ خوش آمدید</h1>
+    <h2>به بوت کمپ خوش آمدید</h2>
+    <h3>به بوت کمپ خوش آمدید</h3>
+    <h4>به بوت کمپ خوش آمدید</h4>
+    <h5>به بوت کمپ خوش آمدید</h5>
+    <h6>به بوت کمپ خوش آمدید</h6>
+    <hr />
+    <b>this is bold</b><br />
+    <!-- this will break the line -->
+    <i>this is italic</i>
+    <u>this is underlined</u><br />
+    <s>19000 toman</s>
+    <b>18000 toman</b>
+
+    <hr />
+
+    <p class="">
+      <!-- 📝class is a global atribute -->
+      <!-- <P>is a tag class="" is a atribute -->
+      <i><b>Lorem ipsum dolor</b></i> sit amet consectetur adipisicing elit.
+      Dolores, laborum. Corporis ipsum ea unde, error aut hic, necessitatibus
+      harum dicta at beatae odit maiores impedit, quisquam inventore! Fugiat,
+      nostrum voluptatem?
+    </p>
+    <p>this is list 👇</p>
+    <ul>
+      <li hidden>apple</li>
+      <li>banana</li>
+      <li>orange</li>
+    </ul>
+
+    <ol type="A" reversed start="5">
+      <!-- with type atribute you can change type of number shown -->
+      <li hidden title="this is title">apple</li>
+      <li id="li_type_A">banana</li>
+      <li>orange</li>
+    </ol>
+
+    <!-- <a> tag use to link to other page -->
+    <a href="www.google.com"> go to google</a>
+    <hr />
+    <img
+      src="./زمینه/backiee-104766.jpg"
+      alt="picture"
+      width="50%"
+      height="25%"
+      onload="myFunction()"
+      ismap
+    />
+    <!-- check📝 -> https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_areamap   for use map 😎 -->
+    <!-- Click the image, and the click coordinates will be sent to the server as a URL query string. -->
+    <hr />
+    <table border="2">
+      <tr>
+        <th colspan="2">name</th>
+        <th>family</th>
+      </tr>
+      <tr>
+        <td onclick="">Amir</td>
+        <td>hossein</td>
+        <td>Almasi</td>
+      </tr>
+    </table>
+    <h1>✅practice 1:</h1>
+    <table border="2">
+      <tr>
+        <th>1_colum</th>
+        <th>1_colum</th>
+        <th>1_colum</th>
+        <th>1_colum</th>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td colspan="2">2</td>
+        <!--⛔ this row has three colum because this ☝ one has been taken two colum  -->
+        <td>2</td>
+      </tr>
+      <tr>
+        <td rowspan="2">3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <!--⛔ this row has three colum because one of them has been taken from first colum of last row -->
+        <td>4</td>
+        <td>4</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>5</td>
+        <td>5</td>
+        <td>5</td>
+      </tr>
+    </table>
+    <!-- <script>
+      function myFunction() {
+        alert("You have changed the size of the browser window!");
+      }
+    </script> -->
+  </body>
+</html>
