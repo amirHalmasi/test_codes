@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>فرم</title>
+    <style>
+      input:focus {
+        border-color: rgb(234, 6, 6);
+        outline-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="./index.php" method="post">
+      <label for="name">name</label><br />
+      <input type="text" name="name" placeholder="enter name" /><br />
+      <textarea name="address" id="" cols="30" rows="10"></textarea><br />
+      <!-- <button type="submit" value="Submit"></button> -->
+      <label for="woman">1</label>
+      <input type="checkbox" name="woman" />
+      <label for="man">2</label>
+      <input type="checkbox" name="man" /><br />
+
+      <label for="single">مجرد</label>
+      <input type="radio" name="wedd" />
+      <label for="married">متاهل</label>
+      <input type="radio" name="wedd" /><br />
+      <select name="degree" id="">
+        <option value="0" selected hidden>مدرک تحصیلی</option>
+        <option value="دیپلم">دیپلم</option>
+        <option value="دیپلم" disabled>فوق دیپلم</option>
+        <option value="لیسانس">مدرک تحصیلی</option></select
+      ><br />
+      <input type="submit" value="Submit" name="sub1" />
+    </form>
+    <hr />
+    <h1>✅practice 1:</h1>
+    <form action="#" method="post">
+      <label for="name">name & family: </label><br />
+      <input
+        type="text"
+        name="name"
+        id="name"
+        min="3"
+        max="6"
+        required
+        placeholder="enter name &family"
+      /><br />
+
+      <label for="phoneNum">phone:</label><br />
+      <input
+        type="tel"
+        name="phoneNum"
+        required
+        placeholder="enter phone"
+      /><br />
+
+      <label for="name">Enter file:</label><br />
+      <input type="file" name="file" placeholder="enter file" /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+    <hr />
+    <h1>✅practice 2:</h1>
+    <form action="">
+      <label for="name">name & family: </label><br />
+      <input
+        type="text"
+        name="name"
+        id="name"
+        min="3"
+        max="6"
+        required
+        placeholder="enter name &family"
+      />
+      <label for="">جنسیت:</label>
+      <label for="gender">مونث</label>
+      <input type="radio" name="gender" value="female" />
+      <label for="married">مذکر</label>
+      <input type="radio" name="gender" value="male" /><br />
+      <label for="">استان:</label>
+      <select name="city" id="">
+        <option value="تهران" selected hidden>انتخاب کنید</option>
+        <option value="تهران">تهران</option>
+        <option value="زنجان">زنجان</option>
+        <option value="تبریز">تبریز</option>
+        <option value="شیراز">شیراز</option></select
+      ><br />
+      <label for="">شهر:</label>
+
+      <select name="city" id="">
+        <option value="تهران" selected hidden>انتخاب کنید</option>
+        <option value="تهران">تهران</option>
+        <option value="زنجان">زنجان</option>
+        <option value="تبریز">تبریز</option>
+        <option value="شیراز">شیراز</option>
+      </select>
+      <label>اپراتور:</label>
+      <label for="hamrahAval">همراه اول</label>
+      <input type="checkbox" name="hamrahAval" />
+      <label for="iranSel">ایرانسل</label>
+      <input type="checkbox" name="iranSel" /><br />
+
+      <input type="submit" value="ثبت" />
+    </form>
+    <hr />
+    <!--
+        nav
+        header
+        main
+        aside
+        footer
+     -->
+  </body>
+</html>
