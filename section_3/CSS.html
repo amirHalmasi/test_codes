@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>CSS</title>
+    <style>
+      h1 {
+        color: blue;
+      }
+      #AS {
+        color: chartreuse;
+        font-size: large;
+      }
+      .BS {
+        color: brown;
+        font-size: medium;
+      }
+      .noneStyleList {
+        list-style-type: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>سلام به همه</h1>
+    <h1>سلام به همه</h1>
+    <h1>سلام به همه</h1>
+    <!-- ⛔ if we dont use <class> and <id> and only use the tag       name all h1 tags have same style -->
+    <h1 class="BS">سلام به همه</h1>
+    <h1 id="AS">سلام به همه</h1>
+    <h1 class="BS">سلام به همه</h1>
+    <!-- ⛔<class> isn't unique and can be use for all tags BUT 
+         ⛔<id> is unique atribute and every tag has unique id -->
+    <ul class="noneStyleList">
+      <li>a</li>
+      <li>b</li>
+      <li>c</li>
+      <li>d</li>
+    </ul>
+    <ul>
+      <li style="color: rgb(143, 15, 15)">a</li>
+      <li>b</li>
+      <li style="color: rgb(39, 158, 12)">c</li>
+      <li>d</li>
+    </ul>
+  </body>
+</html>
