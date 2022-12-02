@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S tag</title>
+    <style>
+      span {
+        background-color: rgb(235, 217, 113);
+        color: rgb(86, 6, 6);
+      }
+      #sStyle {
+        color: rgb(211, 30, 30);
+        background-color: bisque;
+      }
+      #example {
+        color: green;
+        background-color: rgba(169, 234, 212, 0.486);
+      }
+      #example + p {
+        color: cornflowerblue;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="example">
+      <s style="color: brown">Only 50$ </s>&nbsp;&nbsp;&nbsp;&nbsp;until weekend
+      only 35$🤑
+    </p>
+    <p>save your money💰</p>
+
+    <p>
+      📝
+      <span>
+        <i
+          >The <code id="sStyle">&lt;s&gt;</code> tag specifies text that is no
+          longer correct, accurate or relevant. The text will be displayed with
+          a line through it.</i
+        >
+      </span>
+    </p>
+  </body>
+</html>

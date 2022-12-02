@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form tag</title>
+    <style>
+      div {
+        width: 90%;
+        height: 50%;
+        margin: 0 auto;
+
+        background-color: antiquewhite;
+        border: 5px dashed rgb(197, 73, 73);
+      }
+      .inputType {
+        width: 90%;
+        padding: 15px;
+        background-color: rgb(196, 226, 164);
+        border: 2px double rgb(203, 117, 117);
+      }
+      td {
+        padding: 15px;
+      }
+      input[type="text"],
+      input[type="tel"],input[type="submit"] {
+        border: 3px solid yellow;
+        background-color: beige;
+        width: 180px;
+        height: 30px;
+      }
+      input[type="text"]:hover,
+      input[type="tel"]:hover,input[type="submit"]:hover {
+        border: 3px solid rgb(22, 154, 10);
+      }
+      select {
+        width: 180px;
+        height: 30px;
+        background-color: aliceblue;
+        border: 3px solid yellow;
+      }
+      select:hover {
+        background-color: beige;
+        color: cornflowerblue;
+        border: 3px solid rgb(22, 154, 10);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <form action="#" method="post">
+        <div class="inputType">
+          <table>
+            <tr>
+              <td>
+                <h2>this is checkbox</h2>
+                <p>select your Vehicle</p>
+                <input
+                  type="checkbox"
+                  name="Vehicle"
+                  value="bicycle"
+                  id="bicycle"
+                />
+                <label for="bicycle">bicycle</label>
+                <input
+                  type="checkbox"
+                  name="Vehicle"
+                  value="motorcycle"
+                  id="motorcycle"
+                />
+                <label for="motorcycle">motorcycle</label>
+                <input type="checkbox" name="Vehicle" value="car" id="car" />
+
+                <label for="car">car</label>
+              </td>
+              <td>
+                <h2>this is type text</h2>
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="enter your name"
+                  id="name"
+                />
+
+                <h2>this is type tel</h2>
+                <label for="tel">phone</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="enter your phone number"
+                  id="tel"
+                />
+              </td>
+              <td>
+                <h2>this is type radio</h2>
+                <label>gender: </label>
+                <label>&nbsp;male</label>
+                <input type="radio" name="gender" />
+                <label>&nbsp;female</label>
+                <input type="radio" name="gender" />
+
+                <h2>this is type radio</h2>
+                <label for="city">city: </label>
+                <select name="city" id="city">
+                  <option value="" selected hidden>انتخاب کنید</option>
+                  <option value="tehran">tehran</option>
+                  <option>zanjan</option>
+                </select>
+              </td>
+              <td>
+                <h2>this is type date</h2>
+                <label for="birth">birth date: </label>
+                <input type="date" name="date" id="birth" />
+
+                <h2>this is type submit</h2>
+                <label for="submit">birth date: </label>
+                <input type="submit" name="submit" id="submit" value="submit" />
+              </td>
+              <tr>
+                <td>
+                    <h2>this is textarea</h2>
+                    <textarea name="address" cols="20" rows="5"> </textarea>
+                  </td>
+                  
+              </tr>
+              
+            </tr>
+          </table>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
