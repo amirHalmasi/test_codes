@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .mention + li {
+        color: blue;
+        font-size: larger;
+      }
+      .mention ~ li {
+        color: rgb(218, 13, 23);
+        font-size: larger;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Specify colors using HSL values</h1>
+
+    <h2 style="background-color: hsl(0, 100%, 50%)">hsl(0, 100%, 50%)</h2>
+    <h2 style="background-color: hsl(240, 100%, 50%)">hsl(240, 100%, 50%)</h2>
+    <h2 style="background-color: hsl(147, 50%, 47%)">hsl(147, 50%, 47%)</h2>
+    <h2 style="background-color: hsl(300, 76%, 72%)">hsl(300, 76%, 72%)</h2>
+    <h2 style="background-color: hsl(39, 100%, 50%)">hsl(39, 100%, 50%)</h2>
+    <h2 style="background-color: hsl(248, 53%, 58%)">hsl(248, 53%, 58%)</h2>
+
+    <h1>Specify colors using RGB values</h1>
+
+    <h2 style="background-color: rgba(255, 0, 0, 0.832)">
+      rgba(255, 0, 0, 0.832)
+    </h2>
+    <h2 style="background-color: rgba(0, 0, 255, 0.814)">
+      rgba(0, 0, 255, 0.814)
+    </h2>
+    <h2 style="background-color: rgba(60, 179, 114, 0.713)">
+      rgba(60, 179, 114, 0.713)
+    </h2>
+    <h2 style="background-color: rgba(238, 130, 238, 0.8)">
+      rgba(238, 130, 238, 0.8)
+    </h2>
+    <h2 style="background-color: rgba(255, 166, 0, 0.802)">
+      rgba(255, 166, 0, 0.802)
+    </h2>
+    <h2 style="background-color: rgba(105, 90, 205, 0.754)">
+      rgba(105, 90, 205, 0.754)
+    </h2>
+
+    <!-- <p>
+      The <code>+</code> combinator matches the second element only if it
+      <em>immediately</em> follows the first element.
+    </p>
+    <p><strong>Syntax:</strong> <code>A + B</code></p>
+    <p>
+      <strong>Example:</strong> <code>h2 + p</code> will match the first
+      <code>&lt;p&gt;</code> element that <em>immediately</em> follows an
+      <code>&lt;h2&gt;</code> element.
+    </p> -->
+
+    <ul>
+      <li>One</li>
+      <li class="mention">Two!</li>
+      <li>Three</li>
+    </ul>
+  </body>
+</html>
