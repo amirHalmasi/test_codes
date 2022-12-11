@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Cat Lady';
+    src: url('CatLadyRegular.eot');
+    src: url('CatLadyRegular.eot?#iefix') format('embedded-opentype'),
+        url('CatLadyRegular.woff2') format('woff2'),
+        url('CatLadyRegular.woff') format('woff'),
+        url('CatLadyRegular.ttf') format('truetype'),
+        url('CatLadyRegular.svg#CatLadyRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

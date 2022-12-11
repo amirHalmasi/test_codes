@@ -1,0 +1,104 @@
+@keyframes explode {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+@keyframes float {
+  0% {
+    /* -webkit-transform: rotateX(0deg) translateY(0px);
+    -moz-transform: rotateX(0deg) translateY(0px);
+    -ms-transform: rotateX(0deg) translateY(0px);
+    -o-transform: rotateX(0deg) translateY(0px); */
+    transform: rotateZ(0deg) translateY(0px);
+  }
+
+  50% {
+    /* -webkit-transform: rotateX(0deg) translateY(1px) translateX(5px);
+    -moz-transform: rotateX(0deg) translateY(10px) translateX(5px);
+    -ms-transform: rotateX(0deg) translateY(30px) translateX(5px);
+    -o-transform: rotateX(0deg) translateY(40px) translateX(5px); */
+    transform: rotateZ(40deg) translateY(10px) translateX(5px);
+  }
+
+  100% {
+    /* -webkit-transform: rotateX(0deg) translateY(0px) translateX(1px);
+    -moz-transform: rotateX(0deg) translateY(0px) translateX(1px);
+    -ms-transform: rotateX(0deg) translateY(0px) translateX(1px);
+    -o-transform: rotateX(0deg) translateY(0px) translateX(1px); */
+    transform: rotateZ(120deg) translateY(0px) translateX(1px);
+  }
+}
+
+.circle {
+  box-shadow: 0 0 35px rgba(106, 105, 105, 0.752);
+  position: absolute;
+  border-radius: 50%;
+  /* animation-play-state: paused; */
+}
+
+.circles {
+  position: relative;
+  height: 250px;
+  width: 500px;
+  top: 65%;
+  left: 12%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.circle-1 {
+  height: 400px;
+  width: 400px;
+  top: 25%;
+  left: 250%;
+  opacity: 0.8;
+  animation-timing-function: cubic-bezier(0.3, 0.03, 0.97, 0.74);
+  animation-iteration-count: infinite;
+  animation-name: explode;
+  /* -webkit-animation-name: explode; */
+  animation-duration: 6s;
+  /* -webkit-animation-duration: 6s; */
+  /* -webkit-animation-delay: 3.5s; */
+  animation-delay: 3.5s;
+  animation-direction: alternate-reverse;
+  background: linear-gradient(120deg, #40cccf, #8b4f94);
+}
+
+.circle-2 {
+  height: 240px;
+  width: 240px;
+  bottom: 60%;
+  left: 15%;
+  opacity: 0.8;
+  animation-timing-function: cubic-bezier(0.54, 0.085, 0.5, 0.92);
+  animation-iteration-count: infinite;
+  animation-name: float;
+  -webkit-animation-name: float;
+  animation-duration: 6s;
+  -webkit-animation-duration: 6s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 1s;
+  animation-direction: alternate;
+  background: linear-gradient(120deg, #ac2aaa, #95ae50);
+}
+.circle-3 {
+  height: 200px;
+  width: 200px;
+  bottom: 110%;
+  left: 80%;
+  opacity: 0.8;
+  background: linear-gradient(120deg, #229537, #4d96b1);
+  animation-timing-function: cubic-bezier(0.3, 0.03, 0.97, 0.74);
+  /* animation-timing-function: ease, step-start, cubic-bezier(0.1, 0.7, 1, 0.1); */
+  animation-iteration-count: infinite;
+  animation-name: explode;
+  animation-duration: 6s;
+  animation-delay: 3s;
+  animation-direction: alternate-reverse;
+}

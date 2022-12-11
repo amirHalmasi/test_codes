@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background: red;
+        position: relative;
+        animation: mymove 10s;
+        animation-iteration-count: 2;
+        /*✅ forwards start animation from red and finish it with green color  */
+        animation-fill-mode: forwards;
+        /*✅ backwards start animation from red and finish it with red color  */
+        animation-fill-mode: backwards;
+
+        /*✅ both start animation from green and finish it with green color  */
+        animation-fill-mode: both;
+        animation-fill-mode: none;
+        /* https://www.w3schools.com/cssref/css3_pr_animation-fill-mode.php */
+      }
+
+      @keyframes mymove {
+        0% {
+          top: 0px;
+        }
+        50% {
+          top: 200px;
+          background-color: blue;
+        }
+        100% {
+          top: 0px;
+          background-color: green;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>animation-fill-mode: forwards</h1>
+
+    <p>
+      Let the div element retain the style values from the last keyframe when
+      the animation ends:
+    </p>
+
+    <div></div>
+  </body>
+</html>
