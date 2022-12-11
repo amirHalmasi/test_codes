@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Snagrids';
+    src: url('SnagridsRegular.eot');
+    src: url('SnagridsRegular.eot?#iefix') format('embedded-opentype'),
+        url('SnagridsRegular.woff2') format('woff2'),
+        url('SnagridsRegular.woff') format('woff'),
+        url('SnagridsRegular.ttf') format('truetype'),
+        url('SnagridsRegular.svg#SnagridsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

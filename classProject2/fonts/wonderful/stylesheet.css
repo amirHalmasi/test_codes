@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Hot Chocolate';
+    src: url('HotChocolateRegular.eot');
+    src: url('HotChocolateRegular.eot?#iefix') format('embedded-opentype'),
+        url('HotChocolateRegular.woff2') format('woff2'),
+        url('HotChocolateRegular.woff') format('woff'),
+        url('HotChocolateRegular.ttf') format('truetype'),
+        url('HotChocolateRegular.svg#HotChocolateRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

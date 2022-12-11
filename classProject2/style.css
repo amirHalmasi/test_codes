@@ -1,0 +1,294 @@
+@font-face {
+  font-family: "Snagrids";
+  src: url("./fonts/snagrids/SnagridsRegular.eot");
+  src: url("SnagridsRegular.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/snagrids/SnagridsRegular.woff2") format("woff2"),
+    url("./fonts/snagrids/SnagridsRegular.woff") format("woff"),
+    url("./fonts/snagrids/SnagridsRegular.ttf") format("truetype"),
+    url("./fonts/snagrids/SnagridsRegular.svg#SnagridsRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cat Lady";
+  src: url("./fonts/CatLadys/CatLadyRegular.eot");
+  src: url("./fonts/CatLadys/CatLadyRegular.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/CatLadys/CatLadyRegular.woff2") format("woff2"),
+    url("./fonts/CatLadys/CatLadyRegular.woff") format("woff"),
+    url("./fonts/CatLadys/CatLadyRegular.ttf") format("truetype"),
+    url("./fonts/CatLadys/CatLadyRegular.svg#CatLadyRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Denike";
+  src: url("./fonts/denike/DenikeRegular.eot");
+  src: url("./fonts/denike/DenikeRegular.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/denike/DenikeRegular.woff2") format("woff2"),
+    url("./fonts/denike/DenikeRegular.woff") format("woff"),
+    url("./fonts/denike/DenikeRegular.ttf") format("truetype"),
+    url("./fonts/denike/DenikeRegular.svg#DenikeRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@keyframes fade {
+  0% {
+    opacity: 0.75;
+    color: rgb(195, 190, 190);
+  }
+
+  100% {
+    transform: scale(1.4);
+    opacity: 1;
+    color: rgb(20, 17, 17);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+  background-color: rgb(179, 242, 242);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+#wrapper #contantBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 85vh;
+  width: 92vw;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgb(120, 211, 211);
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+#header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid rgba(200, 201, 201, 0.65);
+  width: 100%;
+  height: 8vh;
+  direction: rtl;
+}
+#headerTemplate {
+  width: 100%;
+  /* border: 3px solid rgb(1, 21, 15); */
+  z-index: 1;
+}
+#profile {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0 15px;
+}
+#cube {
+  float: left;
+  font-size: 26px;
+  color: aqua;
+  display: inline-block;
+  /* width: 40px;
+  height: 40px; */
+  margin: 0 20px;
+}
+#menu {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 15px;
+  width: calc(100% - 30px);
+  /* border: 2px solid red; */
+}
+a {
+  display: inline-block;
+  margin: 10px;
+  color: rgb(195, 190, 190);
+  text-decoration: none;
+  font-size: 25px;
+  font-family: "Snagrids", "Courier New", Courier, monospace;
+}
+a:hover {
+  color: black;
+  text-shadow: 2px 0 2px rgb(172, 162, 162);
+  animation-timing-function: cubic-bezier(0.3, 0.03, 0.97, 0.74);
+  animation-iteration-count: 1;
+  animation-name: fade;
+  animation-duration: 0.5s;
+  animation-delay: 50ms;
+  animation-direction: alternate-reverse;
+}
+a:visited {
+  color: rgb(9, 134, 41);
+}
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid rgb(71, 71, 5); */
+
+  width: 98%;
+  height: 90%;
+}
+#contentHeader {
+  font-family: "Denike", "Courier New", Courier, monospace;
+  /* border: 3px solid aquamarine; */
+  width: 80%;
+  height: calc(20% - 10px);
+  margin: 10px 0 0 0;
+  box-sizing: border-box;
+}
+#contentInformation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  font-family: "Denike", "Courier New", Courier, monospace;
+  /* border: 3px solid aquamarine; */
+  width: 80%;
+  height: 100%;
+  /* padding: 0 5%; */
+  box-sizing: border-box;
+}
+.colume {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 50%;
+  height: 100%;
+}
+.colume_row {
+  /* border: 3px solid aquamarine; */
+  width: 95%;
+  overflow: hidden;
+  border-radius: 25px;
+
+  /* box-sizing: border-box; */
+}
+#coffee:hover,
+#photography:hover {
+  box-shadow: 2px 2px 10px rgba(36, 36, 36, 0.6);
+}
+#coffee,
+#photography {
+  /* box-sizing: border-box; */
+  cursor: pointer;
+  object-fit: cover;
+  background-image: url(./images/coffee.jpg);
+  background-size: cover;
+  background-size: 100% 130%;
+  background-position-x: 60px;
+
+  transition: all 1s ease-in-out;
+}
+#coffee:hover .backgroundLayer,
+#photography:hover .backgroundLayer {
+  backdrop-filter: blur(2px);
+  text-shadow: 2px 2px 5px rgba(230, 193, 137, 0.829);
+}
+#photography {
+  background-image: url(./images/photography.jpg);
+}
+.title {
+  padding: 15px 15px;
+  /* border: 2px solid white; */
+}
+.backgroundLayer {
+  width: 90%;
+  height: 90%;
+  transition: all 1s ease-in;
+}
+
+#columeLeft_bottomRow,
+#columeRight_topRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+/* *************************** */
+.boxLeft,
+.boxRight {
+  width: 50%;
+  height: 95%;
+  /* border: 2px solid red; */
+  border-radius: 25px;
+}
+.boxRight {
+  margin-left: 6%;
+}
+#interior:hover,
+#architecture:hover {
+  box-shadow: 2px 2px 10px rgba(36, 36, 36, 0.6);
+}
+#interior,
+#architecture {
+  /* box-sizing: border-box; */
+  cursor: pointer;
+  object-fit: cover;
+  background-image: url(./images/backiee-132765.jpg);
+  background-size: cover;
+  background-size: 100% 100%;
+
+  transition: all 1s ease-in-out;
+}
+#architecture {
+  background-image: url(./images/architecture.jpg);
+}
+#interior:hover .backgroundLayer,
+#architecture:hover .backgroundLayer {
+  backdrop-filter: blur(4px);
+  text-shadow: 2px 2px 5px rgba(94, 91, 88, 0.829);
+}
+/* **************************** */
+#handFood:hover,
+#travel:hover {
+  box-shadow: 2px 2px 10px rgba(36, 36, 36, 0.6);
+}
+#handFood,
+#travel {
+  /* box-sizing: border-box; */
+  cursor: pointer;
+  object-fit: cover;
+  background-image: url(./images/backiee-124255.jpg);
+  background-size: cover;
+  background-size: 100% 100%;
+
+  transition: all 1s ease-in-out;
+}
+#travel {
+  background-image: url(./images/desert.jpg);
+}
+#handFood:hover .backgroundLayer,
+#travel:hover .backgroundLayer {
+  backdrop-filter: blur(4px);
+
+  text-shadow: 2px 2px 5px rgba(94, 91, 88, 0.829);
+}
+.exploreBTN {
+  background-color: azure;
+  width: 12%;
+  margin-left: 2px;
+  text-align: center;
+  color: black;
+  border-radius: 5px;
+  padding: 3px;
+}
+.exploreBTN:visited {
+  color: black;
+  background-color: rgb(154, 225, 155);
+}

@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Denike';
+    src: url('DenikeRegular.eot');
+    src: url('DenikeRegular.eot?#iefix') format('embedded-opentype'),
+        url('DenikeRegular.woff2') format('woff2'),
+        url('DenikeRegular.woff') format('woff'),
+        url('DenikeRegular.ttf') format('truetype'),
+        url('DenikeRegular.svg#DenikeRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
