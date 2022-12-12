@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  /* background-color: beige; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: rgb(232, 226, 219);
+  align-items: center;
+}
+.menu {
+  width: 20%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(232, 226, 219);
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+}
+.resultParent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 70%;
+  height: 90%;
+  border-radius: 5px;
+  /* border: 2px solid black; */
+}
+.result {
+  background-color: rgb(238, 238, 235);
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.9), 6px 6px 6px rgba(0, 0, 0, 0.7),
+    9px 9px 9px rgba(0, 0, 0, 0.5);
+  width: 90%;
+  height: 60%;
+  border-radius: 5px;
+  overflow-y: scroll;
+  position: relative;
+}
+.scriptResult {
+  width: 90%;
+  height: 30%;
+  background-color: rgb(238, 238, 235);
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.9), 6px 6px 6px rgba(0, 0, 0, 0.7),
+    9px 9px 9px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 2%;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  box-sizing: border-box;
+}
+button {
+  background-color: rgb(155, 223, 86);
+  width: 80%;
+  height: 5%;
+  border-radius: 6px;
+  cursor: pointer;
+  border-style: none;
+  transition: all 2s ease;
+}
+
+button:hover {
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.9), 4px 4px 6px rgba(0, 0, 0, 0.7),
+    6px 6px 9px rgba(0, 0, 0, 0.5);
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.runBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+
+  /* padding: 0 5%; */
+  top: 10%;
+  right: 8%;
+  position: absolute;
+  width: 30%;
+  height: 5%;
+  box-sizing: border-box;
+  /* border: 3px solid red; */
+}
+#run {
+  width: 15%;
+  height: 80%;
+  margin: 0 2%;
+  background-color: crimson;
+  color: aliceblue;
+  display: inline-block;
+}
+#textInput {
+  width: 75%;
+  height: 80%;
+  border-radius: 5px;
+  padding: 0 5px;
+  display: inline-block;
+  transition: all 1s ease;
+}
+#textInput:focus {
+  outline-style: none;
+  border-bottom: 3px solid green;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.9), 4px 4px 6px rgba(0, 0, 0, 0.7),
+    6px 6px 9px rgba(0, 0, 0, 0.5);
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
