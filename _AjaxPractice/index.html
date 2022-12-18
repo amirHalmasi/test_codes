@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>AJAX</title>
+  </head>
+  <body>
+    <h1>Learn AJAX</h1>
+    <div id="output"></div>
+    <button id="loadNew">Load</button>
+
+    <script type="text/javascript">
+      "use strict";
+      //   var request = new XMLHttpRequest();
+      var outPut = document.getElementById("output");
+      var btnClick = document.getElementById("loadNew");
+      btnClick.addEventListener("click", function () {
+        loadAjaxRequest();
+      });
+      //   console.log(request);
+      function loadAjaxRequest() {
+        var request = new XMLHttpRequest();
+        request.onreadystatechange = function () {
+          console.log("state changed", request.readyState, request.status);
+          // var done = 4;
+          // var oh = 200;
+
+          if (request.readyState == 4 && request.status == 200) {
+            console.log("ready for data");
+            // console.log(request.responseText);
+            //https://www.w3schools.com/js/js_json_parse.asp
+            var dataObj = JSON.parse(request.responseText);
+            var message = `
+            ${dataObj.results[0].name.first}
+            ${dataObj.results[0].name.last}
+
+              <br><img src="${dataObj.results[0].picture.large} "></img>
+              <br> ${dataObj.results[0].phone}
+              <br> ${dataObj.results[0].email}`;
+            outPut.innerHTML = message;
+            console.log(dataObj);
+          }
+
+          // if (request.readyState == 4) {
+          //   if (request.status == 200) {
+          //     console.log("ready for data");
+          //   }
+          // }
+        };
+        request.open("GET", "https://randomuser.me/api", true);
+        request.send();
+      }
+
+      /*
+          request.onprogress = function () {
+            console.log("PROGRESS", request.readyState, request.status);
+          };
+          request.onload = function () {
+            console.log("DONE", request.readyState, request.status);
+          };
+        */
+      //   request.open("GET", "https://randomuser.me/api", true);
+      //   request.send();
+    </script>
+  </body>
+</html>
