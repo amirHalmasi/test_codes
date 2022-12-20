@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="parent">
+      <h1>Cules gallery</h1>
+      <form action="">
+        <input type="text" name="search" id="input" placeholder="Search" />
+        <input type="submit" id="submit" value="Search" />
+      </form>
+      <div class="grid"></div>
+    </div>
+    <!-- Axios CDN 👇 see: https://cdnjs.com/libraries/axios -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"
+      integrity="sha512-zJYu9ICC+mWF3+dJ4QC34N9RA0OVS1XtPbnf6oXlvGrLGNB8egsEzu/5wgG90I61hOOKvcywoLzwNmPqGAdATA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- macy js see: https://github.com/bigbite/macy.js -->
+    <!-- 📝Macy.js is a lightweight dependency-free JavaScript library designed to sort items vertically into columns by finding an optimum layout with a minimum height. -->
+    <!-- <script src="./macy.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
