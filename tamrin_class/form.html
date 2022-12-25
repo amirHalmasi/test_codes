@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+    <script src="./bootstrap.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <script src="./jquery.min.js"></script>
+    <script src="./register.js"></script>
+  </head>
+  <body>
+    <form action="index.php" method="post">
+      <div class="row px-5">
+        <div class="col-md-6 mb-4">
+          <div class="form-outline">
+            <label class="form-label" for="firstName">First Name</label>
+            <input
+              type="text"
+              id="firstName"
+              class="form-control form-control-lg"
+            />
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="form-outline">
+            <label class="form-label" for="lastName">Last Name</label>
+            <input
+              type="text"
+              id="lastName"
+              class="form-control form-control-lg"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="row px-5">
+        <div class="col-md-6 mb-4 pb-2">
+          <div class="form-outline">
+            <label class="form-label" for="emailAddress">Email</label>
+            <input
+              type="email"
+              id="emailAddress"
+              class="form-control form-control-lg"
+            />
+          </div>
+        </div>
+        <div class="col-md-6 mb-4 pb-2">
+          <div class="form-outline">
+            <label class="form-label" for="phoneNumber">Phone Number</label>
+            <input
+              type="tel"
+              id="phoneNumber"
+              class="form-control form-control-lg"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="row px-5">
+        <div class="col-6">
+          <label class="form-label select-label">Choose province</label>
+          <select
+            class="select form-control-lg"
+            id="province"
+            onchange="loadCity()"
+          >
+            <option value="1" hidden>Choose option</option>
+            <!-- <option value="2">Subject 1</option>
+            <option value="3">Subject 2</option>
+            <option value="4">Subject 3</option> -->
+          </select>
+        </div>
+        <div class="col-6">
+          <label class="form-label select-label">Choose city</label>
+          <select class="select form-control-lg" id="city">
+            <option value="1" hidden>Choose option</option>
+            <!-- <option value="2">Subject 1</option>
+            <option value="3">Subject 2</option>
+            <option value="4">Subject 3</option> -->
+          </select>
+        </div>
+      </div>
+
+      <div class="mt-4 px-5">
+        <input
+          class="btn btn-primary btn-lg justify-content-center"
+          type="submit"
+          value="Submit"
+        />
+      </div>
+    </form>
+  </body>
+</html>
